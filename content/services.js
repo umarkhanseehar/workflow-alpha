@@ -1,0 +1,236 @@
+// ============================================================================
+// SERVICES: every service on the site lives here.
+// To add one: copy an object, give it a unique `id`, choose a `tier`, save, rebuild.
+//   tier:  "core" | "business" | "additional"
+//   icon:  a name from src/icons.js
+// ============================================================================
+
+export const tiers = {
+  core: {
+    label: "Core",
+    title: "Core: Personal Brand Growth",
+    blurb:
+      "The foundation of every engagement. Exactly which of these are included is agreed with each client.",
+    scope: "Core engagement",
+  },
+  business: {
+    label: "Business development support",
+    title: "Business Development Support",
+    blurb:
+      "Connect your visibility to relevant conversations. These are added according to your needs and agreement.",
+    scope: "Added by agreement",
+  },
+  additional: {
+    label: "Additional support",
+    title: "Additional Support",
+    blurb: "Specialist support that strengthens the system when it is needed.",
+    scope: "Added by agreement",
+  },
+};
+
+export const services = [
+  // ------------------------------------------------------------------ CORE
+  {
+    id: "strategy",
+    tier: "core",
+    icon: "compass",
+    title: "Personal Brand Strategy and Positioning",
+    summary: "A clear professional identity and message, before volume.",
+    body: "A clear professional identity comes before publishing large amounts of content. Without it, posts feel scattered and are easy to forget. We work with you to define who you want to reach, what makes you different and what you want to be known for.",
+    includes: [
+      "Audience and positioning",
+      "Professional differentiation",
+      "Messaging and personal brand narrative",
+      "Content pillars",
+      "Thought leadership direction",
+      "Topic planning",
+      "Profile and content consistency",
+    ],
+  },
+  {
+    id: "profile",
+    tier: "core",
+    icon: "profile",
+    title: "LinkedIn Profile Optimization",
+    summary: "Communicate your credibility and value clearly.",
+    body: "Your profile is where interest turns into a decision to get in touch. We rewrite it so a relevant visitor quickly understands who you help and why you are credible.",
+    includes: [
+      "Professional headline",
+      "About section",
+      "Profile positioning and messaging",
+      "Experience and service descriptions",
+      "Featured section recommendations",
+      "Relevant calls to action",
+      "Alignment with your website and business goals",
+    ],
+    note: "This helps communicate credibility and value more clearly. It does not guarantee leads.",
+  },
+  {
+    id: "creation",
+    tier: "core",
+    icon: "pen",
+    title: "Content Creation",
+    summary: "Content built from your expertise and your voice.",
+    body: "We develop content from your experience, opinions, industry insights and the questions your audience asks, adapted to the requirements of each platform.",
+    includes: [
+      "Text posts",
+      "Educational carousels",
+      "Thought leadership content",
+      "Market or industry commentary",
+      "Content adapted to platform requirements",
+      "Newsletter or article material where agreed",
+    ],
+  },
+  {
+    id: "repurposing",
+    tier: "core",
+    icon: "repeat",
+    title: "Content Repurposing",
+    summary: "One useful source, multiple adapted content assets.",
+    body: "Many professionals already have valuable material. We transform an existing source into formats that suit each platform instead of copying it everywhere.",
+    includes: [
+      "LinkedIn post",
+      "Carousel",
+      "Newsletter idea",
+      "Article draft",
+      "Short-video script or clip from supplied footage",
+      "Additional social content where appropriate",
+    ],
+    note: "Not every source is suitable for every format. We recommend what fits.",
+  },
+  {
+    id: "publishing",
+    tier: "core",
+    icon: "send",
+    title: "Content Publishing and Distribution",
+    summary: "Planned, scheduled and consistently published.",
+    body: "We manage the publishing process so approved content actually goes out. LinkedIn is the priority, covering your personal profile and, where relevant, your company page.",
+    includes: [
+      "Content planning and calendar management",
+      "Scheduling and publication coordination",
+      "Your personal LinkedIn profile",
+      "Your company page when relevant",
+      "Additional channels (X, Instagram, Facebook, YouTube) according to your needs and package",
+      "Relevant reporting where included",
+    ],
+    note: "You authorise access and approve the workflow. Additional platforms are not automatically included.",
+  },
+
+  // -------------------------------------------------------------- BUSINESS
+  {
+    id: "engagement",
+    tier: "business",
+    icon: "chat",
+    title: "Engagement and Relationship Development",
+    summary: "Take part in the right conversations, genuinely.",
+    body: "Relevant engagement helps you join industry conversations and develop professional relationships.",
+    includes: [
+      "Thoughtful replies to relevant comments",
+      "Monitoring agreed channels",
+      "Identifying relevant business conversations",
+      "Responding appropriately to genuine enquiries",
+      "Supporting relevant follow-up conversations",
+    ],
+    note: "No automated mass engagement, artificial engagement or spam messaging.",
+  },
+  {
+    id: "inbound",
+    tier: "business",
+    icon: "inbound",
+    title: "Inbound Lead Generation",
+    summary: "A path from useful content to a relevant conversation.",
+    body: "We help visitors who find your content take a clear next step towards a business conversation.",
+    includes: [
+      "Clear calls to action",
+      "Profile-to-website pathways",
+      "Contact forms",
+      "Booking paths where suitable",
+      "Lead-capture workflows",
+      "Tracking enquiries and sources where implemented",
+    ],
+  },
+  {
+    id: "outbound",
+    tier: "business",
+    icon: "outbound",
+    title: "Outbound Lead Generation",
+    summary: "Identify and approach relevant prospects, professionally.",
+    body: "We help identify suitable prospects and approach them with relevant, personalised messages. The scope is defined for each engagement.",
+    includes: [
+      "Target-audience definition",
+      "Account and prospect research",
+      "Identifying suitable decision-makers",
+      "Personalised outreach preparation or execution",
+      "Follow-up processes",
+      "Recording responses and next steps",
+    ],
+    note: "We use accurate, professional outreach practices and respect the rules of each channel.",
+  },
+  {
+    id: "pipeline",
+    tier: "business",
+    icon: "funnel",
+    title: "Lead Pipeline and Follow-up Support",
+    summary: "Keep enquiries and follow-ups organised.",
+    body: "The system can help you organise incoming enquiries, prospect records, follow-up tasks and pipeline activity so relevant conversations are not lost.",
+    includes: [
+      "Organising incoming enquiries",
+      "Prospect records",
+      "Follow-up tasks and reminders",
+      "Pipeline activity tracking",
+    ],
+    note: "Not every lead becomes a customer or closed deal. Outcomes depend on your service, audience, market, timing and sales process.",
+  },
+
+  // ------------------------------------------------------------ ADDITIONAL
+  {
+    id: "video",
+    tier: "additional",
+    icon: "film",
+    title: "Video Editing and Short-Form Content",
+    summary: "Turn suitable footage into polished short clips.",
+    body: "We can edit suitable video material into short-form clips, subject to the footage and the agreed scope.",
+    includes: [
+      "Selecting useful segments",
+      "Editing short clips",
+      "Captions and formatting",
+      "Review before publishing",
+      "Publishing or delivery",
+    ],
+    note: "You supply footage or agree a suitable recording arrangement. Voice notes alone do not create genuine video footage.",
+  },
+  {
+    id: "website",
+    tier: "additional",
+    icon: "globe",
+    title: "Professional Website Development",
+    summary: "A clear home for your expertise, when you need one.",
+    body: "When needed, we help you establish a suitable website or landing page that communicates your expertise, explains your services and gives visitors a clear next step.",
+    includes: [
+      "Professional positioning",
+      "Services and expertise",
+      "Relevant thought leadership",
+      "Contact or enquiry forms",
+      "Appropriate calls to action",
+      "Lead-capture pathways where agreed",
+    ],
+  },
+  {
+    id: "performance",
+    tier: "additional",
+    icon: "chart",
+    title: "Performance Review and Improvement",
+    summary: "Review what the data shows and refine.",
+    body: "Results are reviewed and the process is refined over time, using the data available to us.",
+    includes: [
+      "Publishing consistency",
+      "Relevant engagement",
+      "Profile or website activity where available",
+      "Qualified enquiries",
+      "Outreach responses",
+      "Follow-up completion",
+      "Pipeline progression where tracking is in place",
+    ],
+    note: "We report only what is measured. No invented figures.",
+  },
+];
