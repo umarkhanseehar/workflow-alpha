@@ -1,0 +1,16 @@
+:root{
+  --c-navy: #0B1220;
+  --c-charcoal: #111827;
+  --c-warm-white: #F8FAFC;
+  --c-blue: #4F8CFF;
+  --c-blue-deep: #2F6BE0;
+  --c-tint: #EDF2FA;
+  --c-slate: #5B6B82;
+  --c-slate-light: #9AA9BF;
+  --c-line: #D8E0EC;
+  --c-line-dark: #243049;
+  --font-heading: 'Sora', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --radius: 14px;
+  --max: 1180px;
+}
